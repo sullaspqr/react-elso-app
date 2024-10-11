@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-
+// csak Edge-böngészőben működik! A környezeti változót nem húzza be jól! Van rá megoldás, de az kimutat a jelen projektből useEffect-el!
 function App() {
   const [isActive, setActive] = useState(true);
   const [isDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
